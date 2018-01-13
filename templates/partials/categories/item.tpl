@@ -1,7 +1,7 @@
-<li component="categories/category" data-cid="{../cid}" data-numRecentReplies="1" class="row clearfix">
+<li component="categories/category" data-cid="{../cid}" data-numRecentReplies="1" class="<!-- IF ../class -->{../class}<!-- ELSE -->col-md-3 col-xs-6 col-xs-12<!-- ENDIF ../class --> category-item">
 	<meta itemprop="name" content="{../name}">
 
-	<div class="content <!-- IF ../class -->{../class}<!-- ELSE -->col-md-3 col-xs-6 col-xs-12<!-- ENDIF ../class -->">
+	<div class="content category-content">
 		<!-- IF ../link -->
 		<a style="color: {../color};" href="{../link}" itemprop="url" target="_blank">
 		<!-- ELSE -->
