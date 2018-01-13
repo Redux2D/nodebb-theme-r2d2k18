@@ -1,31 +1,29 @@
 <li component="categories/category" data-cid="{../cid}" data-numRecentReplies="1" class="row clearfix">
 	<meta itemprop="name" content="{../name}">
 
-	<div class="content col-xs-12 <!-- IF config.hideCategoryLastPost -->col-md-10 col-sm-12<!-- ELSE -->col-md-7 col-sm-9<!-- ENDIF config.hideCategoryLastPost -->">
-		<div class="icon pull-left" style="{function.generateCategoryBackground}">
-			<i class="fa fa-fw {../icon}"></i>
-		</div>
+	<div class="content <!-- IF ../class -->{../class}<!-- ELSE -->col-md-3 col-xs-6 col-xs-12<!-- ENDIF ../class -->">
+		<!-- IF ../link -->
+		<a style="color: {../color};" href="{../link}" itemprop="url" target="_blank">
+		<!-- ELSE -->
+		<a style="color: {../color};" href="{config.relative_path}/category/{../slug}" itemprop="url">
+		<!-- ENDIF ../link -->
+			<div
+				id="category-{../cid}" class="category-header category-header-image-{../imageClass}"
+				style="
+					<!-- IF ../backgroundImage -->background-image: url({../backgroundImage});<!-- ENDIF ../backgroundImage -->
+					<!-- IF ../bgColor -->background-color: {../bgColor};<!-- ENDIF ../bgColor -->
+					color: {../color};
+				"
+			>
+				<!-- IF !../link -->
+				<span class="badge {../unread-class}"><i class="fa fa-book" data-toggle="tooltip" title="[[global:topics]]"></i> <span class="human-readable-number" title="{../totalTopicCount}">{../totalTopicCount}</span>&nbsp; <i class="fa fa-pencil" data-toggle="tooltip" title="[[global:posts]]"></i> <span class="human-readable-number" title="{../totalPostCount}">{../totalPostCount}</span></span>
+				<!-- ENDIF !../link -->
 
-		<h2 class="title">
-			<!-- IMPORT partials/categories/link.tpl -->
-		</h2>
-		<div>
-			<!-- IF ../descriptionParsed -->
-			<div class="description">
-				{../descriptionParsed}
+				<!-- IF ../icon -->
+				<div><i class="fa {../icon} fa-4x"></i></div>
+				<!-- ENDIF ../icon -->
 			</div>
-			<!-- ENDIF ../descriptionParsed -->
-			<!-- IF !config.hideSubCategories -->
-			{function.generateChildrenCategories}
-			<!-- ENDIF !config.hideSubCategories -->
-		</div>
-		<span class="visible-xs pull-right">
-			<!-- IF ../teaser.timestampISO -->
-			<a class="permalink" href="{../teaser.url}">
-				<small class="timeago" title="{../teaser.timestampISO}"></small>
-			</a>
-			<!-- ENDIF ../teaser.timestampISO -->
-		</span>
+		</a>
 	</div>
 
 	<!-- IF !../link -->
@@ -37,10 +35,5 @@
 		<span class="{../unread-class} human-readable-number" title="{../totalPostCount}">{../totalPostCount}</span><br />
 		<small>[[global:posts]]</small>
 	</div>
-	<!-- IF !config.hideCategoryLastPost -->
-	<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
-		<!-- IMPORT partials/categories/lastpost.tpl -->
-	</div>
-	<!-- ENDIF !config.hideCategoryLastPost -->
 	<!-- ENDIF !../link -->
 </li>
