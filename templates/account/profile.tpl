@@ -35,6 +35,8 @@
 			</div>
 			<!-- ENDIF !reputation:disabled -->
 
+			<!-- IMPORT partials/awards_profile_flex.tpl -->
+
 			<div class="stat">
 				<div class="human-readable-number" title="{postcount}">{postcount}</div>
 				<span class="stat-label">[[global:posts]]</span>
