@@ -20,6 +20,7 @@
 	</div>
 </div>
 <div widget-area="footer">
+	test in the footer holllaaaa
 	<!-- BEGIN widgets.footer -->
 	{{widgets.footer.html}}
 	<!-- END widgets.footer -->
