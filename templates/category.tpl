@@ -27,7 +27,7 @@
 		</div>
 
 		<hr class="hidden-xs" />
-
+		<!-- IF ../isSection -->
 		<p class="hidden-xs">{name}</p>
 
 		<!-- IF !topics.length -->
@@ -48,6 +48,7 @@
 		<!-- IF config.usePagination -->
 			<!-- IMPORT partials/paginator.tpl -->
 		<!-- ENDIF config.usePagination -->
+		<!-- ENDIF ../isSection -->
 	</div>
 	<div widget-area="sidebar" class="col-lg-3 col-sm-12 <!-- IF !widgets.sidebar.length -->hidden<!-- ENDIF !widgets.sidebar.length -->">
 		<!-- BEGIN widgets.sidebar -->
