@@ -9,7 +9,7 @@
 		<!-- IMPORT partials/category/subcategory.tpl -->
 
 		<!-- IF children.length --><hr class="hidden-xs"/><!-- ENDIF children.length -->
-
+		<!-- IF !../isSection -->
 		<div class="clearfix">
 			<!-- IF privileges.topics:create -->
 			<a href="{config.relative_path}/compose?cid={cid}" component="category/post" id="new_topic" class="btn btn-primary" data-ajaxify="false" role="button">[[category:new_topic_button]]</a>
@@ -27,7 +27,7 @@
 		</div>
 
 		<hr class="hidden-xs" />
-		<!-- IF ../isSection -->
+		
 		<p class="hidden-xs">{name}</p>
 
 		<!-- IF !topics.length -->
@@ -48,7 +48,7 @@
 		<!-- IF config.usePagination -->
 			<!-- IMPORT partials/paginator.tpl -->
 		<!-- ENDIF config.usePagination -->
-		<!-- ENDIF ../isSection -->
+		<!-- ENDIF !../isSection -->
 	</div>
 	<div widget-area="sidebar" class="col-lg-3 col-sm-12 <!-- IF !widgets.sidebar.length -->hidden<!-- ENDIF !widgets.sidebar.length -->">
 		<!-- BEGIN widgets.sidebar -->
