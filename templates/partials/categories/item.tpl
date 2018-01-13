@@ -15,9 +15,6 @@
 					color: {../color};
 				"
 			>
-				<!-- IF !../link -->
-				<span class="badge {../unread-class}"><i class="fa fa-book" data-toggle="tooltip" title="[[global:topics]]"></i> <span class="human-readable-number" title="{../totalTopicCount}">{../totalTopicCount}</span>&nbsp; <i class="fa fa-pencil" data-toggle="tooltip" title="[[global:posts]]"></i> <span class="human-readable-number" title="{../totalPostCount}">{../totalPostCount}</span></span>
-				<!-- ENDIF !../link -->
 
 				<!-- IF ../icon -->
 				<div><i class="fa {../icon} fa-4x"></i></div>
@@ -25,15 +22,4 @@
 			</div>
 		</a>
 	</div>
-
-	<!-- IF !../link -->
-	<div class="col-md-1 hidden-sm hidden-xs stats">
-		<span class="{../unread-class} human-readable-number" title="{../totalTopicCount}">{../totalTopicCount}</span><br />
-		<small>[[global:topics]]</small>
-	</div>
-	<div class="col-md-1 hidden-sm hidden-xs stats">
-		<span class="{../unread-class} human-readable-number" title="{../totalPostCount}">{../totalPostCount}</span><br />
-		<small>[[global:posts]]</small>
-	</div>
-	<!-- ENDIF !../link -->
 </li>
