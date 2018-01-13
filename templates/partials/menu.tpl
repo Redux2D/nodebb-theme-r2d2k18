@@ -1,6 +1,6 @@
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle pull-left" id="mobile-menu">
-					<span component="notifications/icon" class="notification-icon fa fa-fw fa-bell-o unread-count" data-content="{unreadCount.notification}"></span>
+					<span component="notifications/icon" class="notification-icon fa fa-fw fa-bell unread-count" data-content="{unreadCount.notification}"></span>
 					<i class="fa fa-lg fa-bars"></i>
 				</button>
 				<button type="button" class="navbar-toggle hidden" id="mobile-chats">
