@@ -1,7 +1,7 @@
 {
-    "id": "nodebb-theme-persona",
-    "name": "Persona",
+    "id": "nodebb-theme-r2d2k18",
+    "name": "Redux2D Theme",
     "description": "The default theme for NodeBB. Uses a standard approach to forum design.",
-    "url": "https://github.com/psychobunny/nodebb-theme-persona",
+    "url": "https://github.com/Redux2D/nodebb-theme-r2d2k18",
     "screenshot": "screenshot.png"
 }
