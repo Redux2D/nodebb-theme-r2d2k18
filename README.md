@@ -1,11 +1,8 @@
-Persona theme for NodeBB
+Main Redux2D Theme for NodeBB
 ====================
+[![Build Status](https://travis-ci.org/Redux2D/nodebb-theme-r2d2k18.svg?branch=master)](https://travis-ci.org/Redux2D/nodebb-theme-r2d2k18)
 
-Persona is the new default theme for NodeBB as of v0.7.1
-
-## Addons
-
-[Recent Cards](https://github.com/psychobunny/nodebb-plugin-recent-cards)
+Based on Persona
 
 ## Screenshots
 
