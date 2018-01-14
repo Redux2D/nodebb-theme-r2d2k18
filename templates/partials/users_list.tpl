@@ -17,7 +17,7 @@
 
 		<!-- IF section_joindate -->
 		<div title="joindate" class="joindate">
-			<span class="timeago" title="{users.joindateISO}"></span>
+			<span class="timeago" title="{users.lastonlineISO}"></span>
 		</div>
 		<!-- ENDIF section_joindate -->
 
