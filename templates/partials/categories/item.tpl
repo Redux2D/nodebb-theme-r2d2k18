@@ -19,6 +19,7 @@
 				<!-- IF ../icon -->
 				<div><i class="fa {../icon} fa-4x"></i></div>
 				<!-- ENDIF ../icon -->
+				<span class="categorytooltip">{../name}</span>
 			</div>
 		</a>
 	</div>
