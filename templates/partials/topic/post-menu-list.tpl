@@ -47,8 +47,8 @@
 		<span class="bookmark-text">[[topic:bookmark]]</span>
 		<span component="post/bookmark-count" class="bookmarkCount" data-bookmarks="{posts.bookmarks}">{posts.bookmarks}</span>&nbsp;
 
-		<i component="post/bookmark/on" class="fa fa-heart <!-- IF !posts.bookmarked -->hidden<!-- ENDIF !posts.bookmarked -->"></i>
-		<i component="post/bookmark/off" class="fa fa-heart-o <!-- IF posts.bookmarked -->hidden<!-- ENDIF posts.bookmarked -->"></i>
+		<i component="post/bookmark/on" class="fa fa-bookmark <!-- IF !posts.bookmarked -->hidden<!-- ENDIF !posts.bookmarked -->"></i>
+		<i component="post/bookmark/off" class="fa fa-bookmark-o <!-- IF posts.bookmarked -->hidden<!-- ENDIF posts.bookmarked -->"></i>
 	</a>
 </li>
 <!-- ENDIF config.loggedIn -->
