@@ -4,7 +4,7 @@
 	{{widgets.header.html}}
 	<!-- END widgets.header -->
 </div>
-<div class="row">
+<div class="row needsbg">
 	<div class="topic <!-- IF widgets.sidebar.length -->col-lg-9 col-sm-12<!-- ELSE -->col-lg-12<!-- ENDIF widgets.sidebar.length -->">
 
 		<h1 component="post/header" class="hidden-xs" itemprop="name">
