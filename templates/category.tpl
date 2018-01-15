@@ -4,7 +4,7 @@
 	{{widgets.header.html}}
 	<!-- END widgets.header -->
 </div>
-<div class="row">
+<div class="row needsbg">
 	<div class="category <!-- IF widgets.sidebar.length -->col-lg-9 col-sm-12<!-- ELSE -->col-lg-12<!-- ENDIF widgets.sidebar.length -->">
 		<!-- IMPORT partials/category/subcategory.tpl -->
 
