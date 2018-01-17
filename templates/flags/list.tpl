@@ -2,7 +2,7 @@
 	<div class="col-sm-4 col-md-3">
 		<!-- IMPORT partials/flags/filters.tpl -->
 	</div>
-	<div class="col-sm-8 col-md-9">
+	<div class="col-sm-8 col-md-9 needsbg">
 		<div class="text-center">
 			<div class="panel panel-default">
 				<div class="panel-body">

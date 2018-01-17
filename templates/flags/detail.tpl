@@ -2,7 +2,7 @@
 	<div class="col-sm-4 col-md-3">
 		<!-- IMPORT partials/flags/filters.tpl -->
 	</div>
-	<div class="col-sm-8 col-md-9">
+	<div class="col-sm-8 col-md-9 needsbg">
 		<h2>
 			<div class="pull-right">
 				<a class="btn btn-link" href="{config.relative_path}/flags"><i class="fa fa-chevron-left"></i> [[flags:back]]</a>
