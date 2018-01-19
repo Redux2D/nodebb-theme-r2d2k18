@@ -1,6 +1,6 @@
 <!-- IMPORT partials/breadcrumbs.tpl -->
 
-<div class="tag">
+<div class="tag needsbg">
 	<div class="btn-toolbar">
 		<div class="pull-left">
 			<!-- IF loggedIn -->
