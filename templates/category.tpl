@@ -8,7 +8,7 @@
 	<div class="category <!-- IF widgets.sidebar.length -->col-lg-9 col-sm-12<!-- ELSE -->col-lg-12<!-- ENDIF widgets.sidebar.length -->">
 		<!-- IMPORT partials/category/subcategory.tpl -->
 
-		<!-- IF children.length --><hr class="hidden-xs"/><!-- ENDIF children.length -->
+		<!-- IF children.length --><!-- IF !../isSection --><hr class="hidden-xs"/><!-- ENDIF !../isSection --><!-- ENDIF children.length -->
 		<!-- IF !../isSection -->
 		<div class="clearfix">
 			<!-- IF privileges.topics:create -->
