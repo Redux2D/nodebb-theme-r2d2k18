@@ -9,7 +9,7 @@
 		<h1 class="categories-title">[[pages:categories]]</h1>
 		<ul class="categories clearfix" itemscope itemtype="http://www.schema.org/ItemList">
 			<!-- BEGIN categories -->
-			<!-- IMPORT partials/categories/item.tpl -->
+			<!-- IMPORT partials/categories/item_home.tpl -->
 			<!-- END categories -->
 		</ul>
 	</div>
